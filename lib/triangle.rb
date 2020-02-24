@@ -16,13 +16,14 @@ class Triangle
     end
     else
       if (@side_1 <=0) || (@side_2 <= 0) || (@side_3 <=0)
+        begin 
         raise TriangleError
-      rescue TriangleError  
+      rescue TriangleError 
       end
   end
   
   class TriangleError < StandardError
-    
+   
   end  
     
   
