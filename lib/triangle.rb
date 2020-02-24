@@ -7,7 +7,7 @@ class Triangle
   end
   
   def kind 
-    validation
+    
     if (@side_1 == @side_2) && (@side_2 == @side_3)
       :equilateral
     elsif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
@@ -15,6 +15,7 @@ class Triangle
     else (@side_1 != @side_2) || (@side_2 != @side_3) || (@side_1 != @side_3)
       :scalene
     end 
+    validation
     
   end
     
