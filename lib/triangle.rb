@@ -7,5 +7,8 @@ class Triangle
   end
   
   def kind 
-    if (@side_1 <=0)
+    if (@side_1 == @side_2) && (@side_2 == @side_3)
+      :equilateral
+    end
+  end
 end
